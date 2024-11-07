@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Data Visualizations</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-red-50">
+    <h1 class="text-center text-blue-800 font-bold text-8xl p-4">Forest Cover Data Visualizations</h1>
+    <div class="grid grid-cols-12 mx-5">
+
+        <div  class="chart col-span-3 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-blue-700 font-bold text-3xl pb-5">Distribution of Elevation</div>
+            <div class="pt-10" id="histogram"></div>
+            <div class="font-bold text-2xl">Elevation</div>
+        </div>
+       
+        
+        <div  class="chart col-span-3    p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-blue-700 font-bold text-3xl pb-5">Distribution of Slope</div>
+            <div class="p-10" id="histogram2"></div>
+            <div class="font-bold text-2xl">Slope</div>
+        </div>
+        
+        
+        <div  class="chart col-span-3 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-blue-700 font-bold text-3xl pb-7">Count of HillShade</div>
+            <div class="self-center font-bold text-2xl" id="bar-chart"></div>
+        </div>
+        <div  class="chart col-span-3 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-blue-700 font-bold text-3xl pb-7">Proportion of Cover type</div>
+            <div class="self-center font-bold text-xl" id="cover-type-chart"></div>
+        </div>
+        
+
+        <div  class="chart col-span-2    p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-blue-700 font-bold text-3xl pb-7">Proportion of wilderness Areas</div>
+            <div class="p-10" id="pie-chart"></div>
+            <div class="text-3xl pt-3 flex">
+                <div class="p-3" style="background-color: #f08080;"></div> 
+                <div class="pr-10">&nbsp;1</div>
+            
+                <div class="p-3" style="background-color: #66c2a5;"></div> 
+                <div class="pr-10">&nbsp;2</div>
+            
+                <div class="p-3" style="background-color: #8da0cb;"></div> 
+                <div class="pr-10">&nbsp;3</div>
+            
+                <div class="p-3" style="background-color: #fc8d62;"></div> 
+                <div class="pr-10">&nbsp;4</div>
+            </div>
+        </div>
+
+        <div  class="chart col-span-2 p-5 m-5 border-4 border-gray-300  rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-blue-700 font-bold text-3xl pb-7">Distribution of Aspect</div>
+            <div class="self-center font-bold text-2xl" id="box-plot"></div>
+        </div>
+
+        <div  class="chart col-span-3 p-5 m-5 border-4 border-gray-300 rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-blue-700 font-bold text-3xl pb-5">Distribution of Horizontal Distance To Hydrology</div>
+            <div class="self-center font-bold text-xl" id="histogram-hydrology"></div>
+            <div class="font-bold text-2xl">Horizontal Distance To Hydrology</div>
+        </div>
+        
+        <div  class="chart col-span-5 p-5 m-5 border-4 border-gray-300 rounded-xl flex flex-col items-center bg-gray-50">
+            <div class="text-blue-700 font-bold text-3xl pb-5">Frequency of Soil Types</div>
+            <div class="self-center font-bold text-xl" id="bar-chart-soil"></div>
+            <div class="font-bold text-2xl">Soil Types</div>
+        </div>
+        
+        
+
+    </div>
+    
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
